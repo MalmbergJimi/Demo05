@@ -24,6 +24,7 @@ namespace Tehtava02
             kolmas.Pituus = "4:45";
 
             CD naitwis = new CD();
+            naitwis.Artisti = "Nightwish";
             naitwis.Nimi = "Endless Forms Most Beautiful";
             naitwis.Hinta = "5.99€";
 
@@ -52,6 +53,7 @@ namespace Tehtava02
 
             // Tehdään CD
             CD yoman = new CD();
+            yoman.Artisti = "Young Yolo";
             yoman.Nimi = "Tales of YoYoMan";
             yoman.Hinta = "99,99€";
 

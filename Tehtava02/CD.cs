@@ -26,6 +26,7 @@ namespace Tehtava02
             else return null;
         }
 
+        public string Artisti { get; set; }
         public string Nimi { get; set; }
         public string Hinta { get; set; }
 
@@ -38,7 +39,7 @@ namespace Tehtava02
         public void PrintCollection()
         {
             Console.WriteLine("CD DATA: ");
-            Console.WriteLine(cd.ToString());
+            Console.WriteLine( Artisti + ": " + Nimi + ". Hinta: " + Hinta);
             Console.WriteLine("Albumin kappaleet: ");            
             foreach (Biisit biisit in cd)
             {
