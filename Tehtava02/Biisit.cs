@@ -13,7 +13,7 @@ namespace Tehtava02
 
         public override string ToString()
         {
-            return Biisi + " " + Pituus;
+            return " - " + Biisi + ", " + Pituus;
         }
     }
 }

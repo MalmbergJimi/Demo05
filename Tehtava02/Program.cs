@@ -34,12 +34,37 @@ namespace Tehtava02
 
             //Tulostetaan biisit
             naitwis.PrintCollection();
-            // Print whole collection
-           // henkilot.PrintCollection();
 
+            
 
+            // Luodaan lisää biisejä jonka jälkeen tehdään uusi albumi
+            Biisit yoyo = new Biisit();
+            yoyo.Biisi = "Yoyon kostoretko";
+            yoyo.Pituus = "1:00";
 
+            Biisit maan = new Biisit();
+            maan.Biisi = "Still alive Wigga";
+            maan.Pituus = "5:55";
 
+            Biisit wigga = new Biisit();
+            wigga.Biisi = "Hustlin hard";
+            wigga.Pituus = "7:01";
+
+            // Tehdään CD
+            CD yoman = new CD();
+            yoman.Nimi = "Tales of YoYoMan";
+            yoman.Hinta = "99,99€";
+
+            //Lisätään biisit CD:lle
+            yoman.AddBiisi(yoyo);
+            yoman.AddBiisi(maan);
+            yoman.AddBiisi(wigga);
+
+            // Tulostetaan biisit
+            yoman.PrintCollection();
+
+            
+            
 
         }
     }

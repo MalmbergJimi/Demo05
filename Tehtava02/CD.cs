@@ -9,6 +9,7 @@ namespace Tehtava02
     class CD
     {
         private List<Biisit> cd;
+
         public CD()
         {
             cd = new List<Biisit>();
@@ -18,14 +19,7 @@ namespace Tehtava02
         {
             cd.Add(biisit);
         }
-        /*
-        public void AddPerson(Person person)
-        {
-            persons.Add(person);
-        }
-        */
-
-
+        
         public Biisit HaeBiisi(int index)
         {
             if (index < cd.Count) return cd.ElementAt(index);
@@ -35,24 +29,24 @@ namespace Tehtava02
         public string Nimi { get; set; }
         public string Hinta { get; set; }
 
+        public override string ToString()
+        {
+            return Nimi + " " + Hinta;
+        }
 
 
         public void PrintCollection()
         {
-            
+            Console.WriteLine("CD DATA: ");
+            Console.WriteLine(cd.ToString());
+            Console.WriteLine("Albumin kappaleet: ");            
             foreach (Biisit biisit in cd)
             {
                 Console.WriteLine(biisit.ToString());
             }
+            Console.WriteLine();
+
         }
-          /*
-        public void PrintCollection()
-        {
-            foreach (Person person in persons)
-            {
-                Console.WriteLine(person.ToString());
-            }
-        }
-        */
+        
     }
 }
