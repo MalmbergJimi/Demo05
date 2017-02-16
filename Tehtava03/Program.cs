@@ -31,9 +31,32 @@ namespace Tehtava03
             // Laitetaan asunnot taloon
             puut.AddAsunto(leppa);
             puut.AddAsunto(koivu);
-
+            // TULOSTETAAN TIEODT!
             puut.PrintCollection();
 
+
+            //Luodaan uusia asuntoja
+            Asunto orvokki = new Asunto();
+            orvokki.Asuntonro = 3;
+            orvokki.Asukkaat = "Sikke ja Sakke";
+            orvokki.Vuokra = 590;
+            orvokki.Kunto = "Semmoinen semi hyvä";
+
+            Asunto kakkara = new Asunto();
+            kakkara.Asuntonro = 4;
+            kakkara.Asukkaat = "Hilleri Hiiri";
+            kakkara.Vuokra = 15;
+            kakkara.Kunto = "Pikku paska";
+
+            // Luodaan kerrostalo, johon laitetaan asunnot
+            Kerrostalo kukat = new Kerrostalo();
+            kukat.Osoite = "Niityntie 7";
+            kukat.Rakvuosi = "1961";
+
+            kukat.AddAsunto(orvokki);
+            kukat.AddAsunto(kakkara);
+
+            kukat.PrintCollection();
 
         }
     }

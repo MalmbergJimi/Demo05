@@ -32,7 +32,7 @@ namespace Tehtava03
 
         public void PrintCollection()
         {
-            
+            Console.WriteLine("Osoite: " + Osoite + ". Rakennusvuosi: " + Rakvuosi);
             Console.WriteLine("Kerrostalon huoneistot: ");
 
             foreach (Asunto asunto in kerrostalo)
